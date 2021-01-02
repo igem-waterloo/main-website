@@ -9,11 +9,42 @@ module.exports = {
         white: "#FCFCFE",
         yellow: "#ECB807",
         gray: "#F2F2F2",
-      }
+      },
+      fontFamily: {
+        'bg-m': ['Brandon Grotesque Medium'],
+        'bg-r': ['Brandon Grotesque Regular'],
+        'nunito': ['Nunito Sans']
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              fontFamily: theme('fontFamily.bg-r'),
+              fontSize: '3rem',
+              color: theme(`colors.teal`),
+              lineHeight: 1.1,
+            },
+            h3: {
+              fontFamily: theme('fontFamily.bg-r'),
+              fontSize: '1.5rem',
+              color: theme(`colors.blue`),
+            },
+            p: {
+              fontFamily: theme('fontFamily.nunito'),
+              fontSize: '1rem',
+              color: theme(`colors.blue`),
+            },
+          },
+        },
+      }),      
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ['group-hover'],
+    }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

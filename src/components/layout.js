@@ -7,7 +7,9 @@ export default function Layout({ children }) {
     <body class="flex flex-col min-h-screen">
         <div className="mx-8 flex-grow md:mx-32">
             <Header/>
-            {children}
+            <div className="mb-8 md:mb-32">
+                {children}
+            </div>
         </div>
       <Footer />
     </body>
