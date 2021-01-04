@@ -9,7 +9,7 @@ import ecolight from "../images/ecolight.jpg"
 export default function Home() {
   return (
     <Layout>
-      <div class="flex flex-col md:grid md:grid-cols-2 md:gap-4 md:items-center">
+      <div class="flex flex-col md:grid md:grid-cols-2 md:gap-4 md:items-center mb-0 md:mb-8">
         <div class="space-y-2">
           <p class="font-nunito text-base text-blue">Waterloo iGEM</p>
           <div class="container inline-block">
@@ -22,12 +22,12 @@ export default function Home() {
                 src={question}
                 alt="Synthetic Biology Definition"
               />
-              <div class="mt-4 absolute hidden bg-gray rounded-lg text-blue font-nunito text-base p-6 group-hover:block">
-                  <p>
-                    A field of science that involves redesigning organisms for
-                    useful purposes by engineering them to have new abilities
-                  </p>
-                </div>
+              <div class="mt-4 absolute hidden bg-gray rounded-lg text-blue font-nunito text-sm p-6 group-hover:block">
+                <p>
+                  A field of science that involves redesigning organisms for
+                  useful purposes by engineering them to have new abilities
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Home() {
       <article class="prose max-w-none">
         <div class="flex flex-col mb-16 space-y-2 md:flex-row md:items-start md:space-x-20 md:space-y-0">
           <div class="space-y-2">
-            <h3>What is iGEM?</h3>
+            <h2>What is iGEM?</h2>
             <p>
               iGEM is a non-profit organization that hosts the international
               Giant Jamboree competition each year. High school, undergraduate,
@@ -50,7 +50,7 @@ export default function Home() {
             </a>
           </div>
           <div class="space-y-2">
-            <h3>Who is Waterloo iGEM?</h3>
+            <h2>Who is Waterloo iGEM?</h2>
             <p>
               We are an undergraduate student design team who has competed in
               the iGEM competition since 2005. Our team is unique in Waterloo
@@ -62,11 +62,11 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <h3 class="md:text-center">What have we worked on?</h3>
+        <h2 class="md:text-center">What have we worked on?</h2>
       </article>
       <div class="flex flex-col my-4 md:grid grid-cols-3 gap-4">
         <a
-          class="block bg-remine rounded-lg text-blue font-nunito text-sm p-6"
+          class="block bg-remine rounded-2xl text-blue font-nunito text-sm p-6"
           href="https://2020.igem.org/Team:Waterloo"
         >
           <img class="mb-6" src={remine} alt="REMINE Logo" />
@@ -75,7 +75,7 @@ export default function Home() {
           electronic manufacturing wastewater.
         </a>
         <a
-          class="block bg-rooting rounded-lg text-blue font-nunito text-sm p-6"
+          class="block bg-rooting rounded-2xl text-blue font-nunito text-sm p-6"
           href="https://2019.igem.org/Team:Waterloo"
         >
           <img class="mb-6" src={rooting} alt="Rooting for Symbiosis Logo" />
@@ -84,7 +84,7 @@ export default function Home() {
           in the presence of the herbicide linuron.
         </a>
         <a
-          class="block bg-ecolight rounded-lg text-white font-nunito text-sm p-6"
+          class="block bg-ecolight rounded-2xl text-white font-nunito text-sm p-6"
           href="https://2018.igem.org/Team:Waterloo"
         >
           <img class="mb-6" src={ecolight} alt="Ecolight Logo" />

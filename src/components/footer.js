@@ -6,19 +6,16 @@ function Footer() {
   return (
     <footer className=" bg-blue">
       <div className="mx-8 md:mx-16 lg:mx-32 xl:mx-64 2xl:mx-96">
-        <div className="w-full grid grid-rows-2 md:grid-rows-none md:grid-cols-5 gap-8 md:gap-16 py-8">
-          <div className="md:col-span-2">
-            <img class="ml-auto" src={logo} alt="Logo" />
-          </div>
-
-          <div className="md:col-span-3">
-            <p className="text-white font-bg-r text-lg md:text-xl text-right">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between my-8">
+          <img class="mr-auto h-16 md:h-20 lg:h-36" src={logo} alt="Logo" />
+          <div class="flex flex-col">
+            <p className="text-white font-bg-r text-lg md:text-xl text-right mt-8 md:mt-0">
               Follow our social media for updates!
             </p>
-            <div class="mt-4 flex flex-row-reverse gap-4">
+            <div class="mt-2 lg:mt-4 flex flex-row-reverse gap-4">
               <a href="https://twitter.com/waterloo_igem">
                 <svg
-                  class="text-white fill-current hover:text-teal h-20"
+                  class="text-white fill-current hover:text-teal h-10 md:h-18 lg:h-20"
                   viewBox="0 0 250 250"
                   alt="Waterloo iGEM's Twitter"
                 >
@@ -27,7 +24,7 @@ function Footer() {
               </a>
               <a href="https://www.instagram.com/waterloo.igem/">
                 <svg
-                  class="text-white fill-current hover:text-teal h-20"
+                  class="text-white fill-current hover:text-teal h-10 md:h-18 lg:h-20"
                   viewBox="0 0 250 250"
                   alt="Waterloo iGEM's Instagram"
                 >
@@ -39,7 +36,7 @@ function Footer() {
 
               <a href="https://www.facebook.com/WaterlooiGEM">
                 <svg
-                  class="text-white fill-current hover:text-teal h-20"
+                  class="text-white fill-current hover:text-teal h-10 md:h-18 lg:h-20"
                   viewBox="0 0 250 250"
                   alt="Waterloo iGEM's Facebook"
                 >

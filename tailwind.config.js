@@ -26,22 +26,29 @@ module.exports = {
           css: {
             h1: {
               fontFamily: theme('fontFamily.bg-r'),
-              fontSize: theme('text-5xl'),
+              fontSize: '2.25rem',
               color: theme(`colors.teal`),
+              margin: '0rem',
+            },
+            h2: {
+              fontFamily: theme('fontFamily.bg-r'),
+              fontSize: '1.25rem',
+              color: theme(`colors.blue`),
             },
             h3: {
               fontFamily: theme('fontFamily.bg-r'),
-              fontSize: theme('text-xl'),
+              fontSize: '1.15rem',
+              fontWeight: 'normal',
               color: theme(`colors.blue`),
             },
             p: {
               fontFamily: theme('fontFamily.nunito'),
-              fontSize: theme('text-base'),
+              fontSize: '0.875rem',
               color: theme(`colors.blue`),
             },
             a: {
               fontFamily: theme('fontFamily.bg-r'),
-              fontSize: theme('text-2xl'),
+              fontSize: '1.15rem',
               color: theme(`colors.teal`),
               textDecoration: 'none',
               '&:hover': {

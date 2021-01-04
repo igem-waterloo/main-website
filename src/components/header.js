@@ -8,12 +8,12 @@ function Header() {
 
   return (
     <div className="flex flex-col items-center w-full justify-between">
-      <nav className="flex flex-row py-6 items-center w-full">
+      <nav className="flex flex-col md:flex-row md:items-center md:justify-between w-full py-6">
         <a href="/">
           <img class="h-8 lg:h-10" src={logo} alt="Waterloo iGEM Logo" />
         </a>
 
-        <div className="hidden text-base text-right lg:block lg:flex-grow">
+        <div className="hidden text-base ml-auto lg:block">
           <div class="group inline-block relative">
             <button class="text-blue font-bg-r text-lg px-4 inline-flex items-center">
               <span class="mr-1">About</span>
@@ -94,7 +94,7 @@ function Header() {
           </div>
           <a
             href="/joinus"
-            className="inline-block px-4 py-3 mt-4 mx-4 leading-none border rounded-lg font-bg-r text-lg text-white bg-blue hover:text-white hover:bg-yellow lg:mt-0"
+            className="inline-block px-4 py-3 mt-4 ml-4 leading-none border rounded-lg font-bg-r text-lg text-white bg-blue hover:text-white hover:bg-yellow lg:mt-0"
           >
             Join Us
           </a>
@@ -118,7 +118,7 @@ function Header() {
       </nav>
 
       <div
-        className={`${isExpanded ? `block` : `hidden`} w-full block flex-grow`}
+        className={`${isExpanded ? `block` : `hidden`}`}
       >
         <div className="font-bg-r text-lg text-right lg:hidden absolute top-14 right-8 md:right-16 p-4 bg-gray">
           <Link
