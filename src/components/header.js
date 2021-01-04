@@ -1,19 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
-import logo from "../images/logo.svg"
+import logo from "../images/bird.svg"
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
     <div className="flex flex-col items-center w-full justify-between">
-      <nav className="flex flex-row py-6 w-full">
-        <div className="flex items-center flex-shrink-0">
-          <img src={logo} alt="Logo" />
-        </div>
+      <nav className="flex flex-row py-6 items-center w-full">
+        <a href="/">
+          <img class="h-8 lg:h-10" src={logo} alt="Waterloo iGEM Logo" />
+        </a>
 
-        <div className="hidden text-base text-right flex-grow lg:block">
+        <div className="hidden text-base text-right lg:block lg:flex-grow">
           <div class="group inline-block relative">
             <button class="text-blue font-bg-r text-lg px-4 inline-flex items-center">
               <span class="mr-1">About</span>
@@ -103,7 +103,7 @@ function Header() {
         <div className="block lg:hidden ml-auto">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
-            className="flex items-center px-3 py-2 border rounded outline-none font-bg-r text-lg text-black border-black hover:text-teal hover:border-teal"
+            className="focus:outline-none flex items-center px-3 py-2 border rounded outline-none font-bg-r text-lg text-teal border-teal"
           >
             <svg
               className="fill-current h-3 w-3"
@@ -120,10 +120,16 @@ function Header() {
       <div
         className={`${isExpanded ? `block` : `hidden`} w-full block flex-grow`}
       >
-        <div className="font-bg-r text-lg text-right lg:hidden absolute top-14 right-8 md:right-32 p-4 bg-gray">
+        <div className="font-bg-r text-lg text-right lg:hidden absolute top-14 right-8 md:right-16 p-4 bg-gray">
+          <Link
+            to={`/`}
+            className="block lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
+          >
+            Home
+          </Link>
           <Link
             to={`/team`}
-            className="block lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
+            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
           >
             Team
           </Link>

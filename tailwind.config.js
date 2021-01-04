@@ -9,31 +9,45 @@ module.exports = {
         white: "#FCFCFE",
         yellow: "#ECB807",
         gray: "#F2F2F2",
+        remine: '#CFDBDD',
+        rooting: '#98CC9A',
+        ecolight: '#483C6C',
       },
       fontFamily: {
         'bg-m': ['Brandon Grotesque Medium'],
         'bg-r': ['Brandon Grotesque Regular'],
         'nunito': ['Nunito Sans']
       },
+      fill: theme => ({
+        'white': theme('colors.white'),
+      }),
       typography: (theme) => ({
         DEFAULT: {
           css: {
             h1: {
               fontFamily: theme('fontFamily.bg-r'),
-              fontSize: '3rem',
+              fontSize: theme('text-5xl'),
               color: theme(`colors.teal`),
-              lineHeight: 1.1,
             },
             h3: {
               fontFamily: theme('fontFamily.bg-r'),
-              fontSize: '1.5rem',
+              fontSize: theme('text-xl'),
               color: theme(`colors.blue`),
             },
             p: {
               fontFamily: theme('fontFamily.nunito'),
-              fontSize: '1rem',
+              fontSize: theme('text-base'),
               color: theme(`colors.blue`),
             },
+            a: {
+              fontFamily: theme('fontFamily.bg-r'),
+              fontSize: theme('text-2xl'),
+              color: theme(`colors.teal`),
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+            }
           },
         },
       }),      
