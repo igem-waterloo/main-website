@@ -5,17 +5,28 @@ import logo from "../images/bird.svg"
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false)
+  const DropDownHeaderCSS =
+    "inline-flex items-center font-bg-r text-lg text-blue px-4"
+  const DropDownListCSS =
+    "absolute left-0 hidden w-full bg-white font-bg-r text-lg text-left text-blue p-4 space-y-3 group-hover:block"
+  const DropDownItemCSS = "block whitespace-no-wrap hover:text-teal"
+  const MenuLinkCSS =
+    "inline-block mt-4 mx-4 lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
+  const ctaCSS =
+    "inline-block px-4 py-3 lg:mt-0 bg-blue leading-none border rounded-lg font-bg-r text-lg text-white hover:text-white hover:bg-yellow"
+  const MobileMenuCSS =
+    "absolute -top-6 right-0 flex flex-col items-end space-y-4 lg:hidden bg-gray font-bg-r text-lg text-right text-blue p-4"
 
   return (
-    <div className="flex flex-col items-center w-full justify-between">
-      <nav className="flex flex-col md:flex-row md:items-center md:justify-between w-full py-6">
-        <a href="/">
+    <div>
+      <nav className="flex flex-row items-center justify-between w-full py-6">
+        <a class="pointer-events-none md:pointer-events-auto" href="/">
           <img class="h-8 lg:h-10" src={logo} alt="Waterloo iGEM Logo" />
         </a>
 
         <div className="hidden text-base ml-auto lg:block">
           <div class="group inline-block relative">
-            <button class="text-blue font-bg-r text-lg px-4 inline-flex items-center">
+            <button class={DropDownHeaderCSS}>
               <span class="mr-1">About</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -25,45 +36,30 @@ function Header() {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </button>
-            <ul class="absolute hidden text-blue font-bg-r text-lg text-left pt-1 group-hover:block">
+            <ul class={DropDownListCSS}>
               <li class="">
-                <a
-                  class="pt-3 px-4 block whitespace-no-wrap hover:text-teal"
-                  href="/team"
-                >
+                <a class={DropDownItemCSS} href="/team">
                   Team
                 </a>
               </li>
               <li class="">
-                <a
-                  class="py-3 px-4 block whitespace-no-wrap hover:text-teal"
-                  href="/advisors"
-                >
+                <a class={DropDownItemCSS} href="/advisors">
                   Advisors
                 </a>
               </li>
             </ul>
           </div>
-          <Link
-            to={`/projects`}
-            className="block mt-4 mx-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
+          <Link className={MenuLinkCSS} to={`/projects`}>
             Projects
           </Link>
-          <Link
-            to={`/collaborations`}
-            className="block mt-4 mx-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
+          <Link className={MenuLinkCSS} to={`/collaborations`}>
             Collaborations
           </Link>
-          <Link
-            to={`/contact`}
-            className="block mt-4 mx-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
+          <Link className={MenuLinkCSS} to={`/contact`}>
             Contact
           </Link>
           <div class="group inline-block relative">
-            <button class="text-blue font-bg-r text-lg px-4 inline-flex items-center">
+            <button class={DropDownHeaderCSS}>
               <span class="mr-1">Recruitment</span>
               <svg
                 class="fill-current h-4 w-4"
@@ -73,29 +69,20 @@ function Header() {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </button>
-            <ul class="absolute hidden text-blue font-bg-r text-lg text-left pt-1 left-0 group-hover:block">
+            <ul class={DropDownListCSS}>
               <li class="">
-                <a
-                  class="pt-3 px-4 block whitespace-no-wrap hover:text-teal"
-                  href="/timeline"
-                >
+                <a class={DropDownItemCSS} href="/timeline">
                   Timeline
                 </a>
               </li>
               <li class="">
-                <a
-                  class="py-3 px-4 block whitespace-no-wrap hover:text-teal"
-                  href="/faq"
-                >
+                <a class={DropDownItemCSS} href="/faq">
                   FAQ
                 </a>
               </li>
             </ul>
           </div>
-          <a
-            href="/joinus"
-            className="inline-block px-4 py-3 mt-4 ml-4 leading-none border rounded-lg font-bg-r text-lg text-white bg-blue hover:text-white hover:bg-yellow lg:mt-0"
-          >
+          <a href="/joinus" className={ctaCSS}>
             Join Us
           </a>
         </div>
@@ -103,7 +90,7 @@ function Header() {
         <div className="block lg:hidden ml-auto">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
-            className="focus:outline-none flex items-center px-3 py-2 border rounded outline-none font-bg-r text-lg text-teal border-teal"
+            className="focus:outline-none flex items-center px-3 py-2 font-bg-r text-teal text-lg border rounded outline-none border-teal"
           >
             <svg
               className="fill-current h-3 w-3"
@@ -117,62 +104,17 @@ function Header() {
         </div>
       </nav>
 
-      <div
-        className={`${isExpanded ? `block` : `hidden`}`}
-      >
-        <div className="font-bg-r text-lg text-right lg:hidden absolute top-14 right-8 md:right-16 p-4 bg-gray">
-          <Link
-            to={`/`}
-            className="block lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Home
-          </Link>
-          <Link
-            to={`/team`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Team
-          </Link>
-          <Link
-            to={`/advisors`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Advisors
-          </Link>
-          <Link
-            to={`/projects`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Projects
-          </Link>
-          <Link
-            to={`/collaborations`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Collaborations
-          </Link>
-          <Link
-            to={`/contact`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Contact
-          </Link>
-          <Link
-            to={`/timeline`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            Timeline
-          </Link>
-          <Link
-            to={`/faq`}
-            className="block mt-4 lg:inline-block lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
-          >
-            FAQ
-          </Link>
-          <a
-            href="/joinus"
-            className="inline-block px-4 py-3 mt-4 leading-none border rounded-lg font-bg-r text-lg text-white bg-blue hover:text-white hover:bg-yellow lg:mt-0"
-          >
+      <div className={`${isExpanded ? `block` : `hidden`} relative w-full items-end`}>
+        <div className={MobileMenuCSS}>
+          <Link to={`/`}>Home</Link>
+          <Link to={`/team`}>Team</Link>
+          <Link to={`/advisors`}>Advisors</Link>
+          <Link to={`/projects`}>Projects</Link>
+          <Link to={`/collaborations`}>Collaborations</Link>
+          <Link to={`/contact`}>Contact</Link>
+          <Link to={`/timeline`}>Timeline</Link>
+          <Link to={`/faq`}>FAQ</Link>
+          <a href="/joinus" className={ctaCSS}>
             Join Us
           </a>
         </div>
