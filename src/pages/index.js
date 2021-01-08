@@ -27,7 +27,7 @@ export default function Home() {
   )
 
   return (
-    <Layout>
+    <Layout title="Home">
       <div className="flex flex-col md:flex-row md:gap-4 md:items-center mb-0 md:mb-8">
         <div className="md:w-1/2 space-y-2">
           <p className="font-nunito text-base text-blue">Waterloo iGEM</p>

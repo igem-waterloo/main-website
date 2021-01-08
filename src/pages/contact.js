@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 export default function Contact() {
   return (
-    <Layout>
+    <Layout  title="Contact">
       <div className="flex flex-col md:flex-row md:items-start md:space-x-64">
         <h1 className="font-bg-m text-4xl text-teal border-b-2 border-yellow">
           Contact

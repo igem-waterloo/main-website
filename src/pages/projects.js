@@ -46,7 +46,7 @@ export default function Projects() {
   )
 
   return (
-    <Layout>
+    <Layout title="Projects">
       <article className="prose max-w-none">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between">
           <h1 className="border-b-2 border-yellow">Projects</h1>

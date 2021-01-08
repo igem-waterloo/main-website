@@ -6,5 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-postcss'],
+  siteMetadata: {
+    title: `Waterloo iGEM`,
+    description: `Synthetic Biology Design Team`
+  },
+  plugins: ['gatsby-plugin-postcss', `gatsby-plugin-react-helmet`]
 }

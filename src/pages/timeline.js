@@ -56,7 +56,7 @@ export default function Team() {
   ))
 
   return (
-    <Layout>
+    <Layout title="Timeline">
       <article className="prose max-w-none">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
           <h1 className="border-b-2 border-yellow">Timeline</h1>
