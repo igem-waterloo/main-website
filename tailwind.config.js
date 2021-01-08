@@ -12,6 +12,10 @@ module.exports = {
         remine: '#CFDBDD',
         rooting: '#98CC9A',
         ecolight: '#483C6C',
+        prions: '#383838',
+        off: '#404855',
+        crispier: '#373B40',
+        staphylocide: "#404855"
       },
       fontFamily: {
         'bg-m': ['Brandon Grotesque Medium'],
@@ -54,6 +58,10 @@ module.exports = {
               '&:hover': {
                 textDecoration: 'underline',
               },
+            },
+            li: {
+              fontFamily: theme('fontFamily.nunito'),
+              fontSize: '0.875rem',
             }
           },
         },

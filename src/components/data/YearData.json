@@ -1,0 +1,29 @@
+[
+    {
+        "term": "Winter ⛄",
+        "description": {
+            "general": ["Applications open and new members are selected — see the Recruitment timeline above for specific dates", "Brainstorm and develop project ideas before pitching them and choosing this year’s project"],
+            "lab": ["Lab training", "Design the organisms"],
+            "math": ["Train members in the tech and math we use"],
+            "hp": ["Devise a research plan", "Locate stakeholders relevant to our project"]
+        }
+    },
+    {
+        "term": "Spring 🌼",
+        "description": {
+            "general": ["When the bulk of our project work happens — see below to learn what each subteam does!"],
+            "lab": ["Engineer the organisms", "Perform and troubleshoot experiments"],
+            "math": ["Develop mathematical models for our system", "Use results of basic models to optimize our system and labwork"],
+            "hp": ["Talk to stakeholders", "Analyze our project from different perspectives (environmental, economic, etc.)"]
+        }
+    },
+    {
+        "term": "Fall 🍂",
+        "description": {
+            "general": ["Document our research and results on the iGEM competition wiki", "Proudly present our work at the Giant Jamboree!"],
+            "lab": ["Finish any remaining experiments", "Document results from all the experiments"],
+            "math": ["Finish analysis of model", "Write up results"],
+            "hp": ["Run any final outreach events", "Explain how our research and stakeholder conversations informed our project design"]
+        }
+    }
+]

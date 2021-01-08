@@ -2,11 +2,31 @@
     {
         "event": "Fall Info Session",
         "date": "Cancelled",
-        "description": "Combined with our Winter Info Session for 2021 due to COVID-19. See below for more details."
+        "description": "We will only hold a Winter Info Session due to COVID-19. See below for more details."
     },
     {
         "event": "Winter Info Session",
-        "date": "Jan 14, 2021 @ 8:00pm ET",
-        "description": "Come learn how you can join Waterloo’s synthetic biology design team from our 2021 subteam leads! Due to COVID-19, the session will be held on Zoom. See our Facebook event for more information."
+        "date": "Jan 14, 2021 @ 7:30pm ET",
+        "description": "Come learn how you can join Waterloo’s synthetic biology design team from our team leads! Due to COVID-19, the session will be held online. See our Facebook event for more information."
+    },
+    {
+        "event": "Applications Open",
+        "date": "January 14, 2021",
+        "description": "Applications for all subteams open only once per year! Follow our social media for updates."
+    },
+    {
+        "event": "Applications Close",
+        "date": "Jan 23, 2021 @ 11:59pm ET",
+        "description": "No late applications will be considered, so make sure you submit your application on time!"
+    },
+    {
+        "event": "Interviews",
+        "date": "End of Jan",
+        "description": "Successful candidates will be contacted shortly after applications close."
+    },
+    {
+        "event": "Decisions Finalized",
+        "date": "Beginning of Feb",
+        "description": "All applicants will receive a response from us in February."
     }
 ]
