@@ -22,7 +22,7 @@ function Header() {
     var joinUsBtn = (
       <a
         className={ctaCSS}
-        href="https://www.google.ca/forms/about/"
+        href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdWXO7-EF_vgOPB-gZBkeDeDGDNaWKND7aGkSDqLzbmNmFY4w/viewform?usp=send_form"
         target="_blank"
         rel="noopener noreferrer"
       >

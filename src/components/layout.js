@@ -7,17 +7,18 @@ import { siteMetadata } from '../../gatsby-config';
 export default function Layout({ children, title }) {
   {
     /* If you want the banner to be clickable, change announcementBanner's tag to "a"
-  If you want the banner to not be clickable, change the tag to "div"
+  If you want the banner to not be clickable, change the tag to "div" and comment out (don't delete) the target and rel
   If you don't want the banner, COMMENT OUT (don't delete) {announcementBanner} in the return statement */
   }
   const announcementBanner = (
-    <div
+    <a
       className="w-full bg-teal font-nunito text-white text-sm lg:text-base text-center p-2 z-10"
-      href=""
+      href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdWXO7-EF_vgOPB-gZBkeDeDGDNaWKND7aGkSDqLzbmNmFY4w/viewform?usp=send_form"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      Applications for our 2021 team open January 14. Follow our social media
-      for updates.
-    </div>
+      Applications for our 2021 team are now open. Click here to apply.
+    </a>
   )
 
   return (

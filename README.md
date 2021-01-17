@@ -1,46 +1,45 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <img alt="Waterloo iGEM Logo" src="src/images/bird.svg" width="60" />
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Waterloo iGEM's Team Website
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+The team website is made with [Gatsby](https://www.gatsbyjs.com/), a React-based framework that allows for a seamless, app-like experience and lots of great plugins, such as [Tailwind](https://tailwindcss.com/), a CSS framework that allows you to style directly in your markup.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## Setting up 🚀
 
-## 🚀 Quick start
+1.  **Install Node.js and Git**
 
-1.  **Create a Gatsby site.**
+    To run the code properly, you need to install Node.js, a package manager, and Git, a version control system that you'll use to update this Github repository. For more details, see [this doc](https://www.gatsbyjs.com/docs/tutorial/part-zero/). Also, if you don't have a code editor, downloading Visual Studio Code is recommended, and if you don't have a GitHub account, you'll need to make one.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+1.  **Clone this repository**
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+    Before you can clone the repository, you first need to be invited to it. After you accept the invitation, in your terminal, navigate to the folder you want to save the website code package to and then clone this repository.
 
     ```shell
-    cd my-hello-world-starter/
-    gatsby develop
+    cd the/folder/you/want/to/save/to
+    git clone https://github.com/igem-waterloo/main-website.git
     ```
 
-1.  **Open the source code and start editing!**
+1.  **Edit and run your code**
+
+    Open the entire site directory in your code editor. To see your code live in the browser:
+
+    ```shell
+    npm start
+    # you can also do "gatsby develop"
+    ```
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+## THE IMPORTANT PART: Updating the Website ❗
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+This section details how to change wording, dates, links, pictures, etc. to keep our site up-to-date, NOT how to change the design or structure. Unless you're familiar with web development, please do not mess around with the code and just change the parts detailed below.
 
-## 🧐 What's inside?
+(will be updated)
+
+## (If you're interested) Overview of Gatsby Starter Files 🧐
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -58,7 +57,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on. npm packages are automatically installed.
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
@@ -81,19 +80,3 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
