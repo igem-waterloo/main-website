@@ -3,8 +3,9 @@ import React from "react"
 import logo from "../images/logo.svg"
 
 function Footer() {
-  const socialStyle = "text-white fill-current hover:text-teal h-10 md:h-18 lg:h-20"
-  
+  const socialStyle =
+    "text-white fill-current hover:text-teal h-10 md:h-18 lg:h-20"
+
   return (
     <footer className=" bg-blue">
       <div className="mx-8 md:mx-16 lg:mx-32 xl:mx-64 2xl:mx-96">
@@ -14,7 +15,7 @@ function Footer() {
             <p className="text-white font-bg-r text-lg md:text-xl text-left md:text-right mt-8 md:mt-0">
               Follow our social media for updates!
             </p>
-            <div className="mt-2 lg:mt-4 flex flex-row gap-4">
+            <div className="mt-2 lg:mt-4 flex flex-row space-x-4">
               <a
                 href="https://www.facebook.com/WaterlooiGEM"
                 target="_blank"
