@@ -8,7 +8,8 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Waterloo iGEM`,
-    description: `Synthetic Biology Design Team`
+    description: `Synthetic Biology Design Team`,
   },
-  plugins: ['gatsby-plugin-postcss', `gatsby-plugin-react-helmet`]
+  pathPrefix: `/main-website`,
+  plugins: ["gatsby-plugin-postcss", `gatsby-plugin-react-helmet`],
 }
