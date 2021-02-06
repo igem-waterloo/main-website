@@ -25,35 +25,48 @@ export default function Team() {
     )
   )
 
-  const yearDates = yearData.map(({ term, description: { general, lab, math, hp } }) => (
-    <div className="bg-gray border rounded-2xl border-transparent p-4">
-      <h2 style={{ fontWeight: 400, textAlign: "center", lineHeight: "2em", margin: "0em", borderBottomWidth: "2px", borderColor: "#BBBBBB"}}>{term}</h2>
-      <h3 style={{ color: "#009A9C", marginTop: "1em" }}>General</h3>
-      <ul>
-        {general.map((value, index) => (
-          <li key={index}>{value}</li>
-        ))}
-      </ul>
-      <h3 style={{ color: "#009A9C", margin: 0 }}>Lab &amp; Design</h3>
-      <ul>
-        {lab.map((value, index) => (
-          <li key={index}>{value}</li>
-        ))}
-      </ul>
-      <h3 style={{ color: "#009A9C", margin: 0 }}>Math &amp; Modelling</h3>
-      <ul>
-        {math.map((value, index) => (
-          <li key={index}>{value}</li>
-        ))}
-      </ul>
-      <h3 style={{ color: "#009A9C", margin: 0 }}>Human Practices</h3>
-      <ul style={{ margin: 0 }}>
-        {hp.map((value, index) => (
-          <li key={index}>{value}</li>
-        ))}
-      </ul>
-    </div>
-  ))
+  const yearDates = yearData.map(
+    ({ term, description: { general, lab, math, hp } }) => (
+      <div className="bg-gray border rounded-2xl border-transparent p-4">
+        <h2
+          style={{
+            fontWeight: 400,
+            textAlign: "center",
+            lineHeight: "2em",
+            margin: "0em",
+            borderBottomWidth: "2px",
+            borderColor: "#BBBBBB",
+          }}
+        >
+          {term}
+        </h2>
+        <h3 style={{ color: "#009A9C", marginTop: "1em" }}>General</h3>
+        <ul>
+          {general.map((value, index) => (
+            <li key={index}>{value}</li>
+          ))}
+        </ul>
+        <h3 style={{ color: "#009A9C", margin: 0 }}>Lab &amp; Design</h3>
+        <ul>
+          {lab.map((value, index) => (
+            <li key={index}>{value}</li>
+          ))}
+        </ul>
+        <h3 style={{ color: "#009A9C", margin: 0 }}>Math &amp; Modelling</h3>
+        <ul>
+          {math.map((value, index) => (
+            <li key={index}>{value}</li>
+          ))}
+        </ul>
+        <h3 style={{ color: "#009A9C", margin: 0 }}>Human Practices</h3>
+        <ul style={{ margin: 0 }}>
+          {hp.map((value, index) => (
+            <li key={index}>{value}</li>
+          ))}
+        </ul>
+      </div>
+    )
+  )
 
   return (
     <Layout title="Timeline">
@@ -66,11 +79,17 @@ export default function Team() {
         </div>
         <h2>2021 Recruitment</h2>
         <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 md:items-start mb-0 md:mb-8">
-          <div className="span-col-1 flex flex-col gap-4">{recruitmentDates}</div>
-          <img style={{ margin: 0, borderRadius: "2em" }} src={photo} alt="Team" />
+          <div className="span-col-1 flex flex-col gap-4">
+            {recruitmentDates}
+          </div>
+          <img
+            style={{ margin: 0, borderRadius: "2em" }}
+            src={photo}
+            alt="Team"
+          />
         </div>
         <h2>Overview of Our Competition Season</h2>
-        <div className="mt-8 flex flex-col md:grid md:grid-cols-3 gap-4 md:items-start">
+        <div className="mt-8 flex flex-col space-y-4 md:grid md:grid-cols-3 md:space-y-0 md:gap-4 md:items-start">
           {yearDates}
         </div>
       </article>

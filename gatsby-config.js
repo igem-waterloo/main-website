@@ -11,5 +11,5 @@ module.exports = {
     description: `Synthetic Biology Design Team`,
   },
   pathPrefix: `/main-website`,
-  plugins: ["gatsby-plugin-postcss", `gatsby-plugin-react-helmet`],
+  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-react-helmet`],
 }

@@ -27,9 +27,7 @@ export default function Faq() {
         </div>
       </article>
 
-      <div className="mt-8 flex flex-col gap-4">
-        {faq}
-      </div>
+      <div className="mt-8 flex flex-col space-y-4">{faq}</div>
     </Layout>
   )
 }

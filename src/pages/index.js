@@ -43,9 +43,9 @@ export default function Home() {
               />
               <div className="mt-4 absolute hidden bg-gray rounded-lg text-blue font-nunito text-sm p-6 group-hover:block">
                 <p>
-                  In the same way we can wire an electric circuit with a
-                  battery and resistor to power a lightbulb, we can also create
-                  a genetic circuit to accomplish a specific task in synthetic
+                  In the same way we can wire an electric circuit with a battery
+                  and resistor to power a lightbulb, we can also create a
+                  genetic circuit to accomplish a specific task in synthetic
                   biology by combining DNA sequences with known functions!
                 </p>
               </div>
@@ -70,7 +70,12 @@ export default function Home() {
               applications and effects of engineered biological systems to solve
               the world’s biggest problems.
             </p>
-            <a className="block pt-1" href="https://igem.org/Main_Page" target="_blank" rel="noopener noreferrer">
+            <a
+              className="block pt-1"
+              href="https://igem.org/Main_Page"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit the official website &#8594;
             </a>
           </div>
@@ -89,7 +94,7 @@ export default function Home() {
         </div>
         <h2 className="md:text-center">What have we worked on?</h2>
       </article>
-      <div className="flex flex-col my-4 md:grid grid-cols-3 gap-4">
+      <div className="flex flex-col space-y-4 my-4 md:grid md:grid-cols-3 md:gap-4 md:space-y-0 items-start">
         {displayProjects}
       </div>
       <article className="prose prose-sm lg:prose-lg max-w-none">

@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import favicon from "../images/favicon.ico"
 import { siteMetadata } from "../../gatsby-config"
 
 export default function Layout({ children, title }) {
@@ -26,7 +27,9 @@ export default function Layout({ children, title }) {
       <Helmet
         title={`${title} | ${siteMetadata.title}`}
         htmlAttributes={{ lang: "en" }}
-      />
+      >
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <body className="bg-white flex flex-col min-h-screen">
         {/*{announcementBanner}*/}
         <div className="mx-8 mb-32 flex-grow md:mx-16 lg:mt-2 lg:mx-32 xl:mx-64 2xl:mx-96">
