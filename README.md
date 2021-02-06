@@ -15,18 +15,23 @@ The team website is made with [Gatsby](https://www.gatsbyjs.com/), a React-based
 
 1.  **Clone this repository**
 
-    Before you can clone the repository, you first need to be invited to it. After you accept the invitation, in your terminal, navigate to the folder you want to save the website code package to and then clone this repository:
+    Before you can clone the repository, you first need to be invited to it by going to Settings > Manage Access > Invite teams or people.
+
+    In your terminal, navigate to the folder you want to save the website code package to and then clone this repository:
 
     ```shell
     cd the/folder/you/want/to/save/to
     git clone https://github.com/igem-waterloo/main-website.git
     ```
 
+    If it's the first time using Git on your computer, you'll also be prompted to sign into your GitHub account from the terminal.
+
 1.  **Edit and run your code**
 
     Open the entire site directory in your code editor. To see your code live in the browser:
 
     ```shell
+    # make sure you're cd'ed into the repository
     npm start
     # you can also do "gatsby develop"
     ```
@@ -35,18 +40,64 @@ The team website is made with [Gatsby](https://www.gatsbyjs.com/), a React-based
 
 1.  **Push your changes to the repo**
 
-    To push (i.e. add) your changes to the master branch of the website repository:
+    If it's the first time pushing (i.e. adding) changes to the website repository:
 
     ```shell
     git remote add origin https://github.com/igem-waterloo/main-website.git
-    git push -u origin master
+    git push
     ```
+
+    If it's not:
+
+    ```shell
+    # to push changes for all files
+    git add .
+    # if you want to only add specific files, replace . with the file names separated by a space
+
+    git commit -m "message you want to add to your commit"
+    git push
+    ```
+
+    Alternatively, if you're using Visual Studio Code, you can do the above steps automatically by using the Source Control tab in the left menu bar, adding your commit message in the text field, and clicking the checkmark.
 
 ## THE IMPORTANT PART: Updating the Website ❗
 
-This section details how to change wording, dates, links, pictures, etc. to keep our site up-to-date, NOT how to change the design or structure. Unless you're familiar with web development, please do not mess around with the code and just change the parts detailed below.
+This section details how to change wording, dates, links, pictures, colours, etc. to keep our site up-to-date, NOT how to change the design or structure. Unless you're familiar with web development, please do not mess around with the code and just change the parts detailed below.
 
-(will be updated)
+### Adding images
+
+All images should be added to `src/images`.
+
+### Adding colours
+
+Since we're using Tailwind, all colours should be added to `tailwind.config.js` under `theme:extend:colors`. Use a unique identifier for the colour (ex. title of the project) and the hex code for the colour you want to use.
+
+### Updating Join Us button
+
+Go to `src/components/header.js` and see comments above `applicationsOpen`.
+
+To change the page users are redirected to if applications are closed, go to `src/pages/joinus.js` and update as you see fit.
+
+### Updating announcement bar
+
+Go to `src/components/layout.js` and follow the comments above `announcementBanner` to change the link, make it unclickable, or remove it.
+
+### Updating team description
+
+Go to `src/components/data/TeamData.js` and edit the subteam and ideal candidate descriptions.
+
+### Updating projects
+
+Go to `src/components/data/ProjectData.js`. Copy one of the existing blocks to use as a template for a new project. List all projects in reverse chronologial order (i.e. most recent to least recent). You do not need to edit `index.js` to change the 3 most recent projects shown on the home page, it will automatically do so from `ProjectData.js`.
+
+### Updating FAQ
+
+Go to `src/components/data/FaqData.json` and add a new Q&A.
+
+### Updating timeline
+
+Go to `src/components/data/RecruitmentData.json` to update dates for key deadlines, events, etc. for the year.
+Go to `src/components/data/YearData.json` to update the general goals for the team and subteams throughout the year.
 
 ## (If you're interested) Overview of Gatsby Starter Files 🧐
 

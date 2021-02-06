@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import { siteMetadata } from '../../gatsby-config';
+import { siteMetadata } from "../../gatsby-config"
 
 export default function Layout({ children, title }) {
   {
@@ -10,7 +10,8 @@ export default function Layout({ children, title }) {
   If you want the banner to not be clickable, change the tag to "div" and comment out (don't delete) the target and rel
   If you don't want the banner, COMMENT OUT (don't delete) {announcementBanner} in the return statement */
   }
-  const announcementBanner = (
+  {
+    /* const announcementBanner = (
     <a
       className="w-full bg-teal font-nunito text-white text-sm lg:text-base text-center p-2 z-10"
       href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdWXO7-EF_vgOPB-gZBkeDeDGDNaWKND7aGkSDqLzbmNmFY4w/viewform?usp=send_form"
@@ -19,7 +20,8 @@ export default function Layout({ children, title }) {
     >
       Applications for our 2021 team are now open. Click here to apply.
     </a>
-  )
+  ) */
+  }
 
   return (
     <>

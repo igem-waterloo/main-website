@@ -17,6 +17,11 @@ function Header() {
   const MobileMenuCSS =
     "absolute -top-6 right-0 flex flex-col items-end space-y-4 lg:hidden bg-gray font-bg-r text-lg text-right text-blue p-4"
 
+  {
+    /* Set applicationsOpen to true or false depending on where you are in the recruitment cycle 
+    If true, change the href tag to the link for the Google Form application
+    If false, it will redirect the user to /joinus */
+  }
   const applicationsOpen = true
   if (applicationsOpen) {
     var joinUsBtn = (
