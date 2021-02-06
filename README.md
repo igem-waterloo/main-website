@@ -15,7 +15,7 @@ The team website is made with [Gatsby](https://www.gatsbyjs.com/), a React-based
 
 1.  **Clone this repository**
 
-    Before you can clone the repository, you first need to be invited to it. After you accept the invitation, in your terminal, navigate to the folder you want to save the website code package to and then clone this repository.
+    Before you can clone the repository, you first need to be invited to it. After you accept the invitation, in your terminal, navigate to the folder you want to save the website code package to and then clone this repository:
 
     ```shell
     cd the/folder/you/want/to/save/to
@@ -32,6 +32,15 @@ The team website is made with [Gatsby](https://www.gatsbyjs.com/), a React-based
     ```
 
     Your site is now running at `http://localhost:8000`!
+
+1.  **Push your changes to the repo**
+
+    To push (i.e. add) your changes to the master branch of the website repository:
+
+    ```shell
+    git remote add origin https://github.com/igem-waterloo/main-website.git
+    git push -u origin master
+    ```
 
 ## THE IMPORTANT PART: Updating the Website ❗
 
