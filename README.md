@@ -99,6 +99,18 @@ Go to `src/components/data/FaqData.json` and add a new Q&A.
 Go to `src/components/data/RecruitmentData.json` to update dates for key deadlines, events, etc. for the year.
 Go to `src/components/data/YearData.json` to update the general goals for the team and subteams throughout the year.
 
+## Deploying the website 🏃
+
+To prepare the repository for deployment on the CS Club's server:
+
+    ```shell
+    npm run deploy
+    ```
+
+This will update the `gh-pages` branch and convert all the files into pure HTML/CSS/JS.
+
+To make sure nothing has broken in the website, go to [https://igem-waterloo.github.io/main-website/] after the website has finished building.
+
 ## (If you're interested) Overview of Gatsby Starter Files 🧐
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
