@@ -109,7 +109,7 @@ To prepare the repository for deployment on the CS Club's server:
 
 This will update the `gh-pages` branch and convert all the files into pure HTML/CSS/JS.
 
-To make sure nothing has broken in the website, go to [https://igem-waterloo.github.io/main-website/] after the website has finished building.
+To make sure nothing has broken in the website, go to https://igem-waterloo.github.io/main-website/ after the website has finished building.
 
 ## (If you're interested) Overview of Gatsby Starter Files 🧐
 
