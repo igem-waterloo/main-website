@@ -103,9 +103,9 @@ Go to `src/components/data/YearData.json` to update the general goals for the te
 
 To prepare the repository for deployment on the CS Club's server:
 
-    ```shell
-    npm run deploy
-    ```
+```shell
+npm run deploy
+```
 
 This will update the `gh-pages` branch and convert all the files into pure HTML/CSS/JS.
 

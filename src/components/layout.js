@@ -10,8 +10,7 @@ export default function Layout({ children, title }) {
   If you want the banner to not be clickable, change the tag to "div" and comment out (don't delete) the target and rel
   If you don't want the banner, COMMENT OUT (don't delete) {announcementBanner} in the return statement */
   }
-  {
-    /* const announcementBanner = (
+  const announcementBanner = (
     <a
       className="w-full bg-teal font-nunito text-white text-sm lg:text-base text-center p-2 z-10"
       href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdWXO7-EF_vgOPB-gZBkeDeDGDNaWKND7aGkSDqLzbmNmFY4w/viewform?usp=send_form"
@@ -20,8 +19,7 @@ export default function Layout({ children, title }) {
     >
       Applications for our 2021 team are now open. Click here to apply.
     </a>
-  ) */
-  }
+  )
 
   return (
     <>
@@ -30,7 +28,7 @@ export default function Layout({ children, title }) {
         htmlAttributes={{ lang: "en" }}
       />
       <body className="bg-white flex flex-col min-h-screen">
-        {announcementBanner}
+        {/*{announcementBanner}*/}
         <div className="mx-8 mb-32 flex-grow md:mx-16 lg:mt-2 lg:mx-32 xl:mx-64 2xl:mx-96">
           <Header />
           <div className="my-8">{children}</div>
