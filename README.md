@@ -86,6 +86,10 @@ Go to `src/components/layout.js` and follow the comments above `announcementBann
 
 Go to `src/components/data/TeamData.js` and edit the subteam and ideal candidate descriptions.
 
+### Updating advisors
+
+Go to `src/components/data/AdvisorsData.js` and edit as needed.
+
 ### Updating projects
 
 Go to `src/components/data/ProjectData.js`. Copy one of the existing blocks to use as a template for a new project. List all projects in reverse chronologial order (i.e. most recent to least recent). You do not need to edit `index.js` to change the 3 most recent projects shown on the home page, it will automatically do so from `ProjectData.js`.
