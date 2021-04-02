@@ -166,6 +166,10 @@ Once you're finished debugging, comment out the `pathPrefix` again, run `npm run
 
     For more information, see the [CSClub wiki](https://wiki.csclub.uwaterloo.ca/Main_Page).
 
+## If you need any help 😣
+
+Email the original developer of the site [Jeriann Hsiao](mailto:jlhsiao@uwaterloo.ca)
+
 ## (If you're interested) Overview of Gatsby Starter Files 🧐
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
