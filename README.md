@@ -164,7 +164,7 @@ Once you're finished debugging, comment out the `pathPrefix` again, run `npm run
     11. Drag over the deployable files you extracted from the `gh-pages` ZIP file to the directory.
     12. Check out the [website](http://igem.uwaterloo.ca/) to ensure everything is still functional!
 
-    For more information, see the [CSClub wiki](https://wiki.csclub.uwaterloo.ca/Main_Page).
+For more information, see the [CSClub wiki](https://wiki.csclub.uwaterloo.ca/Main_Page).
 
 ## If you need any help 😣
 
