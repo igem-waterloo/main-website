@@ -10,6 +10,7 @@ module.exports = {
     title: `Waterloo iGEM`,
     description: `Synthetic Biology Design Team`,
   },
-  pathPrefix: `/main-website`,
+  /* Uncomment to debug on gh-pages branch */
+  /*pathPrefix: `/main-website`,*/
   plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-react-helmet`],
 }
