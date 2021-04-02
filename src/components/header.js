@@ -103,7 +103,7 @@ function Header() {
         </div>
         {joinUsBtn}
       </div>
-      <div className="fixed block lg:hidden ml-auto top-6 right-6 md:right-16 shadow">
+      <div className="fixed block lg:hidden ml-auto top-6 right-6 md:right-16 shadow z-10">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
           className="focus:outline-none flex items-center px-3 py-2 font-bg-r text-teal text-lg border rounded outline-none border-teal bg-white"
