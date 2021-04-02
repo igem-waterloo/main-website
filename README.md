@@ -121,7 +121,7 @@ You can go to https://igem-waterloo.github.io/main-website/ after the website ha
 
 However, to do so, you'll need to navigate to `gatsby-config.js` and uncomment the `pathPrefix` to add the `main-website` slug to all the file paths.
 
-Once you're finished debugging, comment out the `pathPrefix` again, run `npm run deploy` again, navigate to the `gh-pages` branch, and click `Code` > Download ZIP and extract the ZIP file.
+Once you're finished debugging, comment out the `pathPrefix` again, run `npm run deploy` again, navigate to the `gh-pages` branch, click `Code` > Download ZIP, and extract the ZIP file.
 
 ### (If you don't already have one) Creating a CS Club account
 
