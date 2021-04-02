@@ -105,6 +105,8 @@ Go to `src/components/data/YearData.json` to update the general goals for the te
 
 ## Deploying the website 🏃
 
+### Creating the deployment files
+
 To prepare the repository for deployment on the CS Club's server:
 
 ```shell
@@ -113,7 +115,55 @@ npm run deploy
 
 This will update the `gh-pages` branch and convert all the files into pure HTML/CSS/JS.
 
-To make sure nothing has broken in the website, go to https://igem-waterloo.github.io/main-website/ after the website has finished building.
+### Debugging the deployment files
+
+You can go to https://igem-waterloo.github.io/main-website/ after the website has finished building to see if anything has broken.
+
+However, to do so, you'll need to navigate to `gatsby-config.js` and uncomment the `pathPrefix` to add the `main-website` slug to all the file paths.
+
+Once you're finished debugging, comment out the `pathPrefix` again, run `npm run deploy` again, navigate to the `gh-pages` branch, and click `Code` > Download ZIP and extract the ZIP file.
+
+### (If you don't already have one) Creating a CS Club account
+
+1.  **Email SysCom to set up a club rep account**
+    You must email the [Systems Committee](mailto:syscom@csclub.uwaterloo.ca) from the `uwigem@gmail.com` account so they can verify you’re a club member. Let them know you want to set up a club representative account under the `uwigem` club account.
+
+You'll need to send them:
+
+1. A picture/scan of your WatCard
+2. Your WatIAM username
+3. Your acknowledgement of having read, understood, and agreeing with their [machine usage policy](https://csclub.uwaterloo.ca/services/machine_usage)
+
+Once your club rep account has been created, they’ll give you a password which you’ll reset upon your first access into the CS Club machines.
+
+1.  **Logging into a CS Club machine for the first time**
+
+1.  Open the terminal.
+1.  `ssh username@corn-syrup.csclub.uwaterloo.ca` (you can replace `corn-syrup` with any other CSClub machine you want to use, see the full list [here](https://wiki.csclub.uwaterloo.ca/Machine_List))
+1.  Say Yes when the security warning pops up. This is mainly a concern if you get the security warning after already logging into the machine once.
+1.  `Password:` enter the password SysCom gave you
+1.  You should now have access to the `corn-syrup` machine, but you won't need to do anything more in the shell, so go ahead and close it.
+
+Note: the `ssh` command should already be installed on your computer (Mac and Linux for sure, Windows 10 should have it). If you're on a Windows and you get an error, you might have to manually install it or you can download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) instead.
+
+1. **Uploading deployment files onto our website**
+
+For Windows (see the [CSClub wiki](https://wiki.csclub.uwaterloo.ca/Club_Hosting#Accessing_Club_Resources) for Mac instructions):
+
+1. Download [WinSCP](https://winscp.net/eng/download.php)
+2. `File protocol: SFTP`
+3. `Host name: corn-syrup.csclub.uwaterloo.ca` (replacing `corn-syrup` with any other CSClub machine you want to use)
+4. `Port number: 22`
+5. `User name:` enter your WatIAM username
+6. `Password:` enter your new password after resetting it
+7. Click Login
+8. Say Yes when the security warning pops up
+9. Navigate to /users/uwigem/www
+10. Delete all the current files in the directory (it takes less than a minute).
+11. Drag over the deployable files you extracted from the `gh-pages` ZIP file to the directory.
+12. Check out the [website](http://igem.uwaterloo.ca/) to ensure everything is still functional!
+
+For more information, see the [CSClub wiki](https://wiki.csclub.uwaterloo.ca/Main_Page).
 
 ## (If you're interested) Overview of Gatsby Starter Files 🧐
 

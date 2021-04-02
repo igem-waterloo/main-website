@@ -52,7 +52,7 @@ export default function Collaborations() {
             </p>
           </div>
           <img
-            className="w-2/5 rounded-xl"
+            className="w-full md:w-2/5 rounded-xl"
             style={{ margin: 0 }}
             src={ohio}
             alt="Waterloo iGEM with OhioState iGEM"
@@ -77,7 +77,7 @@ export default function Collaborations() {
             </p>
           </div>
           <img
-            className="w-2/5 rounded-xl"
+            className="w-full md:w-2/5 rounded-xl"
             style={{ margin: 0 }}
             src={tuebingen}
             alt="Waterloo iGEM with Tuebingen iGEM"

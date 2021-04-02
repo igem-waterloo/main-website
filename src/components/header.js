@@ -38,93 +38,91 @@ function Header() {
   }
 
   return (
-    <div>
-      <nav className="flex flex-row items-center justify-between w-full py-6">
-        <Link className="pointer-events-none md:pointer-events-auto" to={`/`}>
-          <img className="h-8 lg:h-10" src={logo} alt="Waterloo iGEM Logo" />
-        </Link>
+    <nav className="flex flex-row items-center w-full justify-between py-6">
+      <Link className="pointer-events-none md:pointer-events-auto" to={`/`}>
+        <img className="h-8 lg:h-10" src={logo} alt="Waterloo iGEM Logo" />
+      </Link>
 
-        <div className="hidden text-base ml-auto lg:block">
-          <div className="group inline-block relative">
-            <button className={DropDownHeaderCSS}>
-              <span className="mr-1">About</span>
-              <svg
-                className="fill-current h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </button>
-            <ul className={DropDownListCSS}>
-              <li className="">
-                <Link className={DropDownItemCSS} to={`/team`}>
-                  Team
-                </Link>
-              </li>
-              <li className="">
-                <Link className={DropDownItemCSS} to={`/advisors`}>
-                  Advisors
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <Link className={MenuLinkCSS} to={`/projects`}>
-            Projects
-          </Link>
-          <Link className={MenuLinkCSS} to={`/collaborations`}>
-            Collaborations
-          </Link>
-          <Link className={MenuLinkCSS} to={`/contact`}>
-            Contact
-          </Link>
-          <div className="group inline-block relative">
-            <button className={DropDownHeaderCSS}>
-              <span className="mr-1">Recruitment</span>
-              <svg
-                className="fill-current h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </button>
-            <ul className={DropDownListCSS}>
-              <li className="">
-                <Link className={DropDownItemCSS} to={`/timeline`}>
-                  Timeline
-                </Link>
-              </li>
-              <li className="">
-                <Link className={DropDownItemCSS} to={`/faq`}>
-                  FAQ
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {joinUsBtn}
-        </div>
-        <div className="block lg:hidden ml-auto sticky top-0">
-          <button
-            onClick={() => toggleExpansion(!isExpanded)}
-            className="focus:outline-none flex items-center px-3 py-2 font-bg-r text-teal text-lg border rounded outline-none border-teal"
-          >
+      <div className="hidden text-base lg:block lg:right-0">
+        <div className="group inline-block relative">
+          <button className={DropDownHeaderCSS}>
+            <span className="mr-1">About</span>
             <svg
-              className="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
+              className="fill-current h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
             >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
             </svg>
           </button>
+          <ul className={DropDownListCSS}>
+            <li className="">
+              <Link className={DropDownItemCSS} to={`/team`}>
+                Team
+              </Link>
+            </li>
+            <li className="">
+              <Link className={DropDownItemCSS} to={`/advisors`}>
+                Advisors
+              </Link>
+            </li>
+          </ul>
         </div>
-      </nav>
+        <Link className={MenuLinkCSS} to={`/projects`}>
+          Projects
+        </Link>
+        <Link className={MenuLinkCSS} to={`/collaborations`}>
+          Collaborations
+        </Link>
+        <Link className={MenuLinkCSS} to={`/contact`}>
+          Contact
+        </Link>
+        <div className="group inline-block relative">
+          <button className={DropDownHeaderCSS}>
+            <span className="mr-1">Recruitment</span>
+            <svg
+              className="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </button>
+          <ul className={DropDownListCSS}>
+            <li className="">
+              <Link className={DropDownItemCSS} to={`/timeline`}>
+                Timeline
+              </Link>
+            </li>
+            <li className="">
+              <Link className={DropDownItemCSS} to={`/faq`}>
+                FAQ
+              </Link>
+            </li>
+          </ul>
+        </div>
+        {joinUsBtn}
+      </div>
+      <div className="fixed block lg:hidden ml-auto top-6 right-6 md:right-16 shadow">
+        <button
+          onClick={() => toggleExpansion(!isExpanded)}
+          className="focus:outline-none flex items-center px-3 py-2 font-bg-r text-teal text-lg border rounded outline-none border-teal bg-white"
+        >
+          <svg
+            className="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
 
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } relative w-full items-end z-10`}
+        } fixed w-full items-end z-10 right-6 md:right-16 top-20`}
       >
         <div className={MobileMenuCSS}>
           <Link to={`/`}>Home</Link>
@@ -138,7 +136,7 @@ function Header() {
           {joinUsBtn}
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

@@ -1,6 +1,8 @@
 const AdvisorsData = [
   {
     name: "Dr. Brian Ingalls",
+    website:
+      "https://uwaterloo.ca/applied-mathematics/people-profiles/brian-ingalls",
     picture: require("../../images/ingalls.png"),
     position:
       "Associate Professor (Department of Applied Math, cross-appointed to Departments of Biology and Chemical Engineering)",
@@ -9,6 +11,7 @@ const AdvisorsData = [
   },
   {
     name: "Dr. Trevor Charles",
+    website: "https://uwaterloo.ca/biology/people-profiles/trevor-c-charles",
     picture: require("../../images/charles.png"),
     position:
       "Professor (Department of Biology) and Director of Waterloo Centre for Microbiology",
@@ -17,6 +20,7 @@ const AdvisorsData = [
   },
   {
     name: "Dr. Barbara Moffatt",
+    website: "https://uwaterloo.ca/biology/people-profiles/barbara-moffatt",
     picture: require("../../images/moffatt.png"),
     position:
       "Associate Dean of Science, Student Relations and Professor and Undergraduate Advisor (Department of Biology)",
@@ -25,6 +29,7 @@ const AdvisorsData = [
   },
   {
     name: "Dr. Valerie Ward",
+    website: "https://uwaterloo.ca/chemical-engineering/profile/vward",
     picture: require("../../images/ward.png"),
     position: "Assistant Professor (Department of Chemical Engineering)",
     bio:
@@ -32,6 +37,7 @@ const AdvisorsData = [
   },
   {
     name: "Dr. Marc Aucoin",
+    website: "https://uwaterloo.ca/chemical-engineering/profile/maucoin",
     picture: require("../../images/aucoin.png"),
     position: "Interim Chair & Professor (Department of Chemical Engineering)",
     bio:
@@ -39,6 +45,7 @@ const AdvisorsData = [
   },
   {
     name: "Dr. Andrew Doxey",
+    website: "https://uwaterloo.ca/biology/people-profiles/andrew-c-doxey",
     picture: require("../../images/doxey.png"),
     position:
       "Assistant Professor and Undergraduate Advisor (Department of Biology)",
@@ -47,6 +54,7 @@ const AdvisorsData = [
   },
   {
     name: "Dr. Forbes Burkowski",
+    website: "https://cs.uwaterloo.ca/people-profiles/forbes-burkowski",
     picture: require("../../images/burkowski.png"),
     position: "Professor Emeritus (Computer Science Department)",
     bio:
@@ -54,6 +62,7 @@ const AdvisorsData = [
   },
   {
     name: "Nathan Braniff",
+    website: "https://scholar.google.ca/citations?user=E8rPHeYAAAAJ&hl=en",
     picture: require("../../images/braniff.png"),
     position: "PhD Candidate, Applied Mathematics",
     bio:

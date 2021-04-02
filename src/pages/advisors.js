@@ -5,7 +5,7 @@ import advisorsData from "../components/data/AdvisorsData"
 
 export default function Advisors() {
   const advisors = advisorsData.map(
-    ({ name, picture, position, bio }, index) => (
+    ({ name, website, picture, position, bio }, index) => (
       <div
         className="flex flex-col md:flex-row md:gap-8 md:items-start mt-4 bg-gray rounded-lg p-8"
         key={index}
@@ -17,16 +17,19 @@ export default function Advisors() {
           alt={name}
         />
         <div className="col-span-2 mt-4 md:mt-0">
-          <h3
+          <a
             style={{
               color: "#009A9C",
               marginTop: 0,
               marginBottom: "0.3rem",
               fontSize: "1.5rem",
             }}
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {name}
-          </h3>
+          </a>
           <h3
             style={{
               marginTop: 0,
