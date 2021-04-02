@@ -162,7 +162,7 @@ Once you're finished debugging, comment out the `pathPrefix` again, run `npm run
     9. Navigate to /users/uwigem/www
     10. Delete all the current files in the directory (it takes less than a minute).
     11. Drag over the deployable files you extracted from the `gh-pages` ZIP file to the directory.
-    12. Check out the [website](http://igem.uwaterloo.ca/) to ensure everything is still functional!
+    12. Check out the [website](https://igem.uwaterloo.ca/) to ensure everything is still functional!
 
 For more information, see the [CSClub wiki](https://wiki.csclub.uwaterloo.ca/Main_Page).
 
