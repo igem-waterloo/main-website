@@ -8,7 +8,9 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Waterloo iGEM`,
-    description: `Synthetic Biology Design Team`,
+    description: `University of Waterloo's Synthetic Biology Student Design Team`,
+    url: `https://igem.uwaterloo.ca`,
+    image: `src/images/OpenGraph.png`,
   },
   /* Uncomment to debug on gh-pages branch */
   /*pathPrefix: `/main-website`,*/

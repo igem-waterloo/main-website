@@ -26,6 +26,28 @@ export default function Layout({ children, title }) {
     <>
       <Helmet
         title={`${title} | ${siteMetadata.title}`}
+        meta={[
+          {
+            property: `og:title`,
+            content: `${title} | ${siteMetadata.title}`,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            property: `og:image`,
+            content: `${siteMetadata.image}`,
+          },
+          {
+            property: `og:url`,
+            content: `${siteMetadata.url}`,
+          },
+          {
+            property: `og:description`,
+            content: `${siteMetadata.description}`,
+          },
+        ]}
         htmlAttributes={{ lang: "en" }}
       >
         <link rel="icon" href={favicon} />
