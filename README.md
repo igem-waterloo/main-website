@@ -96,7 +96,7 @@ Go to `src/components/data/ProjectData.js`. Copy one of the existing blocks to u
 
 ### Updating FAQ
 
-Go to `src/components/data/FaqData.json` and add a new Q&A.
+Go to `src/pages/faq.js` and add a new Q&A. There's no JSON file so that you can use links.
 
 ### Updating timeline
 

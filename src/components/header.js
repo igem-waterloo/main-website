@@ -6,16 +6,17 @@ import logo from "../images/bird.svg"
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false)
   const DropDownHeaderCSS =
-    "inline-flex items-center font-bg-r text-lg text-blue px-4"
+    "inline-flex items-center font-brandon text-lg text-blue px-4"
   const DropDownListCSS =
-    "absolute left-0 hidden w-full bg-white font-bg-r text-lg text-left text-blue p-4 space-y-3 group-hover:block"
-  const DropDownItemCSS = "block whitespace-no-wrap hover:text-teal"
+    "absolute left-0 hidden w-full bg-white text-left p-4 space-y-3 group-hover:block list-none"
+  const DropDownItemCSS =
+    "block whitespace-no-wrap text-blue hover:text-teal hover:no-underline"
   const MenuLinkCSS =
-    "inline-block mt-4 mx-4 lg:mt-0 font-bg-r text-lg text-blue hover:text-teal"
+    "inline-block mt-4 mx-4 lg:mt-0 font-brandon text-lg text-blue hover:text-teal hover:no-underline"
   const ctaCSS =
-    "inline-block px-4 py-3 lg:mt-0 bg-blue leading-none border rounded-lg border-transparent font-bg-r text-lg text-white hover:text-blue hover:bg-yellow"
+    "inline-block px-4 py-3 lg:mt-0 bg-blue leading-none border rounded-lg border-transparent font-brandon text-lg text-white hover:text-blue hover:bg-yellow hover:no-underline"
   const MobileMenuCSS =
-    "absolute -top-6 right-0 flex flex-col items-end space-y-4 lg:hidden bg-gray font-bg-r text-lg text-right text-blue p-4"
+    "absolute -top-6 right-0 flex flex-col items-end space-y-4 lg:hidden bg-gray text-right p-4"
 
   {
     /* Set applicationsOpen to true or false depending on where you are in the recruitment cycle 
@@ -106,10 +107,10 @@ function Header() {
       <div className="fixed block lg:hidden ml-auto top-6 right-6 md:right-16 shadow z-10">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="focus:outline-none flex items-center px-3 py-2 font-bg-r text-teal text-lg border rounded outline-none border-teal bg-white"
+          className="focus:outline-none flex items-center px-3 py-2 text-teal border rounded outline-none border-teal bg-white ring-transparent"
         >
           <svg
-            className="fill-current h-3 w-3"
+            className="fill-current h-6 w-6"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -122,17 +123,33 @@ function Header() {
       <div
         className={`${
           isExpanded ? `block` : `hidden`
-        } fixed w-full items-end z-10 right-6 md:right-16 top-20`}
+        } fixed w-full items-end z-10 right-6 md:right-16 top-24`}
       >
         <div className={MobileMenuCSS}>
-          <Link to={`/`}>Home</Link>
-          <Link to={`/team`}>Team</Link>
-          <Link to={`/advisors`}>Advisors</Link>
-          <Link to={`/projects`}>Projects</Link>
-          <Link to={`/collaborations`}>Collaborations</Link>
-          <Link to={`/contact`}>Contact</Link>
-          <Link to={`/timeline`}>Timeline</Link>
-          <Link to={`/faq`}>FAQ</Link>
+          <Link to={`/`} className="text-blue hover:no-underline">
+            Home
+          </Link>
+          <Link to={`/team`} className="text-blue hover:no-underline">
+            Team
+          </Link>
+          <Link to={`/advisors`} className="text-blue hover:no-underline">
+            Advisors
+          </Link>
+          <Link to={`/projects`} className="text-blue hover:no-underline">
+            Projects
+          </Link>
+          <Link to={`/collaborations`} className="text-blue hover:no-underline">
+            Collaborations
+          </Link>
+          <Link to={`/contact`} className="text-blue hover:no-underline">
+            Contact
+          </Link>
+          <Link to={`/timeline`} className="text-blue hover:no-underline">
+            Timeline
+          </Link>
+          <Link to={`/faq`} className="text-blue hover:no-underline">
+            FAQ
+          </Link>
           {joinUsBtn}
         </div>
       </div>

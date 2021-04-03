@@ -12,7 +12,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between my-8">
           <img className="mr-auto h-16 md:h-20 lg:h-36" src={logo} alt="Logo" />
           <div className="flex flex-col items-start md:items-end">
-            <p className="text-white font-bg-r text-lg md:text-xl text-left md:text-right mt-8 md:mt-0">
+            <p className="text-white font-brandon text-lg md:text-xl text-left md:text-right mt-8 md:mt-0">
               Follow our social media for updates!
             </p>
             <div className="mt-2 lg:mt-4 flex flex-row space-x-4">

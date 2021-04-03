@@ -18,59 +18,12 @@ module.exports = {
         staphylocide: "#404855",
       },
       fontFamily: {
-        "bg-m": ["Brandon Grotesque Medium"],
-        "bg-r": ["Brandon Grotesque Regular"],
+        brandon: ["Brandon Grotesque"],
+        brandonm: ["Brandon Grotesque Medium"],
         nunito: ["Nunito Sans"],
       },
       fill: theme => ({
         white: theme("colors.white"),
-      }),
-      typography: theme => ({
-        DEFAULT: {
-          css: {
-            h1: {
-              fontFamily: theme("fontFamily.bg-r"),
-              fontSize: "2.25rem",
-              color: theme(`colors.teal`),
-              margin: "0rem",
-              letterSpacing: "0em",
-            },
-            h2: {
-              fontFamily: theme("fontFamily.bg-r"),
-              fontSize: "1.25rem",
-              color: theme(`colors.blue`),
-              letterSpacing: "0em",
-            },
-            h3: {
-              fontFamily: theme("fontFamily.bg-r"),
-              fontSize: "1.15rem",
-              fontWeight: "normal",
-              color: theme(`colors.blue`),
-              letterSpacing: "0em",
-            },
-            p: {
-              fontFamily: theme("fontFamily.nunito"),
-              fontSize: "0.875rem",
-              color: theme(`colors.blue`),
-              letterSpacing: "0em",
-            },
-            a: {
-              fontFamily: theme("fontFamily.bg-r"),
-              fontSize: "1.15rem",
-              color: theme(`colors.teal`),
-              letterSpacing: "0em",
-              textDecoration: "none",
-              "&:hover": {
-                textDecoration: "underline",
-              },
-            },
-            li: {
-              fontFamily: theme("fontFamily.nunito"),
-              fontSize: "0.875rem",
-              letterSpacing: "0em",
-            },
-          },
-        },
       }),
     },
   },
@@ -79,5 +32,5 @@ module.exports = {
       display: ["group-hover"],
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 }

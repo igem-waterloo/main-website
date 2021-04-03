@@ -15,7 +15,6 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.1.0",
     "gatsby": "^2.32.3",
     "gatsby-plugin-postcss": "^3.4.0",

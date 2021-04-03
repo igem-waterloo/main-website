@@ -10,37 +10,18 @@ export default function Advisors() {
         className="flex flex-col md:flex-row md:gap-8 md:items-start mt-4 bg-gray rounded-lg p-8"
         key={index}
       >
-        <img
-          className="md:w-1/4 rounded-lg"
-          style={{ margin: 0 }}
-          src={picture}
-          alt={name}
-        />
+        <img className="md:w-1/4 rounded-lg" src={picture} alt={name} />
         <div className="col-span-2 mt-4 md:mt-0">
           <a
-            style={{
-              color: "#009A9C",
-              marginTop: 0,
-              marginBottom: "0.3rem",
-              fontSize: "1.5rem",
-            }}
+            className="font-brandonm text-2xl mb-4"
             href={website}
             target="_blank"
             rel="noopener noreferrer"
           >
             {name}
           </a>
-          <h3
-            style={{
-              marginTop: 0,
-              marginBottom: "1.5rem",
-              lineHeight: 1.5,
-              fontSize: "1rem",
-            }}
-          >
-            {position}
-          </h3>
-          <p style={{ marginBottom: 0 }}>{bio}</p>
+          <h3 className="text-base font-brandon mt-1 mb-4">{position}</h3>
+          <p>{bio}</p>
         </div>
       </div>
     )
@@ -48,22 +29,16 @@ export default function Advisors() {
 
   return (
     <Layout title="Advisors">
-      <article className="prose max-w-none">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
-          <h1 className="border-b-2 border-yellow">Advisors</h1>
-          <div className="flex flex-col md:flex-row md:items-end space-y-4 md:space-y-0 md:space-x-4">
-            <h3
-              style={{ lineHeight: 1, marginTop: "0.875em", marginBottom: 0 }}
-            >
-              Interested in advising or mentoring our team?
-            </h3>
-            <Link style={{ lineHeight: 1 }} to={`/contact`}>
-              Contact us &#8594;
-            </Link>
-          </div>
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
+        <h1 className="border-b-2 border-yellow">Advisors</h1>
+        <div className="flex flex-col md:flex-row md:items-end md:space-x-2 lg:space-x-4">
+          <h3 className="font-brandon mt-4 md:mt-0">
+            Interested in advising or mentoring our team?
+          </h3>
+          <Link to={`/contact`}>Contact us &#8594;</Link>
         </div>
-        {advisors}
-      </article>
+      </div>
+      {advisors}
     </Layout>
   )
 }
