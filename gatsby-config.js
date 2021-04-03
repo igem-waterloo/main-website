@@ -10,7 +10,7 @@ module.exports = {
     title: `Waterloo iGEM`,
     description: `University of Waterloo's Synthetic Biology Student Design Team`,
     url: `https://igem.uwaterloo.ca`,
-    image: `./static/OpenGraph.png`,
+    image: `./OpenGraph.png`,
   },
   /* Uncomment to debug on gh-pages branch */
   /*pathPrefix: `/main-website`,*/
