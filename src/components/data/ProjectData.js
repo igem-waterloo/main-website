@@ -1,5 +1,22 @@
 const ProjectData = [
   {
+    year: 2021,
+    title: "NeuroDetech",
+    logo: require("../../images/neurodetech.png"),
+    imgSize: "w-48",
+    tagline: "Reducing the bias in ADHD diagnosis",
+    homeDescription:
+      "We created a microfluidic assay chip that quantifies the concentration of certain biomarkers and gene markers with a statistically significant correlation to ADHD to aid in the diagnosis of ADHD and reduce the margin of bias.",
+    abstract:
+      "NeuroDetech is a quantitative tool that aids in the diagnosis of ADHD and reduces the margin of bias by measuring the concentration of certain biomarkers with a statistically significant correlation to ADHD in urine. To do this, we designed a microfluidic assay chip as the physical device, with two types of analytes that we targeted to quantify: biomarkers with detection by a fusion protein, and gene markers with detection by an mRNA-binding CRISPR-Cas system. We also developed an optical detector and application used for signal interpretation and quantification. Due to the nature of neurological disorders, there are many more conditions that, like ADHD, suffer from inherent bias in the diagnosis process, and so we hope that NeuroDetech will provide a general synthetic biology solution to non-invasively and quantitatively assessing the risk of any neurological disorder.",
+    achievements: [
+      "Silver Medal recipient",
+    ],
+    backgroundColour: "bg-neurodetech",
+    textColour: "text-white",
+    wiki: "https://2021.igem.org/Team:Waterloo",
+  },
+  {
     year: 2020,
     title: "REMINE",
     logo: require("../../images/remine.svg"),
@@ -39,8 +56,6 @@ const ProjectData = [
     logo: require("../../images/ecolight.jpg"),
     imgSize: "w-52",
     tagline: "Dynamic Optogenetic Control of Co-cultures",
-    homeDescription:
-      "We dynamically controlled E. coli growth by using optogenetics to regulate the production of MetE, an enzyme essential for bacterial growth.",
     abstract: "Microorganisms exist in complex and diverse communities. This enables a variety of important interactions including co-metabolism and nutrient cycling. Yet, it can be difficult to culture species together in a laboratory setting. Mixed populations are difficult to maintain primarily due to competition: a difference in growth rates often results in one population outcompeting another. Our team aimed to dynamically control E. coli growth by using optogenetics (light-induced gene expression) to regulate the production of MetE, an enzyme essential for bacterial growth. This kind of control could help us overcome a major barrier to maintaining co-cultures: competition between microorganisms. This would open several doors in biotech and research. For instance, metabolic engineering of microbial communities may improve the production of pharmaceuticals, biofuels, and other important materials. Moreover, controllable co-cultures would allow researchers to explore complex interactions between microbes and investigate questions that could not previously be answered due to co-culturing limitations.",
     achievements: ["Silver Medal recipient"],
     backgroundColour: "bg-ecolight",
