@@ -36,7 +36,7 @@ export default function Contact() {
             href={`mailto:policy.uwigem@gmail.com`}
             className="font-nunito text-blue text-lg lg:text-xl"
           >
-            policy.uwigem@gmail.com
+            uwhumanpractices@gmail.com
           </a>
         </div>
       </div>

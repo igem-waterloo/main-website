@@ -7,8 +7,8 @@ export default function JoinUs() {
     <Layout title="Join Us">
       <div className="flex flex-col items-center">
         <h1 className="text-xl md:text-2xl lg:text-5xl text-center text-blue mb-8">
-          Applications have closed for the 2021 season. Follow our social media
-          for updates about joining our 2022 team!
+          Applications have closed for the 2022 season. Follow our social media
+          for updates about joining our 2023 team!
         </h1>
         <img
           className="w-96"

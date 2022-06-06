@@ -1,32 +1,47 @@
 [
     {
-        "event": "Fall Info Session",
-        "date": "Cancelled",
-        "description": "We will only hold a Winter Info Session due to COVID-19. See below for more details."
-    },
-    {
         "event": "Winter Info Session",
-        "date": "Jan 14, 2021 @ 7:30pm ET",
+        "date": "Jan 12, 2022 @ 7:30pm ET",
         "description": "Come learn how you can join Waterloo’s synthetic biology design team from our team leads! Due to COVID-19, the session will be held online. See our Facebook event for more information."
     },
     {
-        "event": "Applications Open",
-        "date": "January 14, 2021",
+        "event": "Main Team Applications Open",
+        "date": "Jan 12, 2022 @ 8:30pm ET",
         "description": "Applications for all subteams open only once per year! Follow our social media for updates."
     },
     {
-        "event": "Applications Close",
-        "date": "Jan 23, 2021 @ 11:59pm ET",
+        "event": "Main Team Applications Close",
+        "date": "Jan 22, 2022 @ 11:59pm ET",
         "description": "No late applications will be considered, so make sure you submit your application on time!"
     },
     {
-        "event": "Interviews",
-        "date": "End of Jan",
-        "description": "Successful candidates will be contacted shortly after applications close."
+        "event": "Main Team Interviews",
+        "date": "Beginning of Feb",
+        "description": "Interviewees will be contacted shortly after applications close."
     },
     {
-        "event": "Decisions Finalized",
-        "date": "Beginning of Feb",
+        "event": "Main Team Decisions Finalized",
+        "date": "Middle of Feb",
         "description": "All applicants will receive a response from us in February."
+    },
+    {
+        "event": "Wiki Design Team Applications Open",
+        "date": "May 5, 2022",
+        "description": "The Wiki Design Team creates the project wiki. It consists of web developers and a UI/UX designer."
+    },
+    {
+        "event": "Wiki Design Team Applications Close",
+        "date": "June 4, 2022 @ 11:59pm ET",
+        "description": "No late applications will be considered, so make sure you submit your application on time!"
+    },
+    {
+        "event": "Wiki Design Team Interviews",
+        "date": "Second week of June",
+        "description": "Interviewees will be contacted shortly after applications close."
+    },
+    {
+        "event": "Wiki Design Team Decisions Finalized",
+        "date": "Third week of June",
+        "description": "All applicants will receive a response from us mid-June."
     }
 ]

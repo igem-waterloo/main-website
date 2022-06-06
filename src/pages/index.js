@@ -77,7 +77,7 @@ export default function Home() {
           </p>
           <a
             className="block"
-            href="https://igem.org/Main_Page"
+            href="https://igem.org/"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -10,6 +10,8 @@ export default function Layout({ children, title }) {
     /* If you want the banner to be clickable, change announcementBanner's tag to "a"
   If you want the banner to not be clickable, change the tag to "div" and comment out (don't delete) the target and rel
   If you don't want the banner, COMMENT OUT (don't delete) {announcementBanner} in the return statement */
+  
+  // TO DO: Uncommenting {announcementBanner} crashes the webpage, contact Jeriann for help
   }
   const announcementBanner = (
     <a
