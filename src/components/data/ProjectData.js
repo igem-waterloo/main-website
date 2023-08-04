@@ -12,7 +12,7 @@ const ProjectData = [
     achievements: [
       "Silver Medal recipient", //not sure abt 2022 results? ask Rohan/Sydney
     ],
-    backgroundColour: "bg-rooting", //proposed name: bg-pinene-express -- proposed hex: #f8f5e9 -- ask design team for confirmation
+    backgroundColour: "bg-rooting", //proposed name: bg-pinene -- proposed hex: #f8f5e9 -- ask design team for confirmation
     textColour: "text-white",
     wiki: "https://2022.igem.wiki/waterloo/", //replaced old url: "https://2022.igem.org/Team:Waterloo", as it redirects to diff iGEM page for some reason
   },
