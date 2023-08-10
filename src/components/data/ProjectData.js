@@ -10,7 +10,7 @@ const ProjectData = [
     abstract:
       "Pinene Express uses bioengineered yeast to produce the main cannabinoids and select terpenes found in the cannabis plant. Pure compounds are extracted from yeast and shipped to various manufacturers where they can mix compounds as needed to mimic cannabis plant extract, eliminating the need for cultivation and post-processing altogether. To develop our proof of concept, our original vision was to construct 4 strains of yeast with quantified production of alpha-pinene, beta-caryophyllene, THC and CBD, respectively. Due to significant delays in our lab progress caused by procurement issues, we were limited to the successful cloning of all genes necessary for alpha-pinene, THC and CBD into yeast, as well as the successful cloning of beta-caryophyllene genes into E. coli.",
     achievements: [
-      "Silver Medal recipient", //not sure abt 2022 results? ask Rohan/Sydney
+      "Gold Medal recipient", 
     ],
     backgroundColour: "bg-rooting", //proposed name: bg-pinene -- proposed hex: #f8f5e9 -- ask design team for confirmation
     textColour: "text-white",
