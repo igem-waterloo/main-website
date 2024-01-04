@@ -8,10 +8,11 @@ import { siteMetadata } from "../../gatsby-config"
 export default function Layout({ children, title }) {
   {
     /* If you want the banner to be clickable, change announcementBanner's tag to "a"
-  If you want the banner to not be clickable, change the tag to "div" and comment out (don't delete) the target and rel
-  If you don't want the banner, COMMENT OUT (don't delete) {announcementBanner} in the return statement */
+  If you want the banner to not be clickable, change the tag to "div" and comment out (don't delete) the target and rel. If you don't want the banner, COMMENT OUT (don't delete) {announcementBanner} in the return statement */
   
   // TO DO: Uncommenting {announcementBanner} crashes the webpage, contact Jeriann for help
+  // ^^ 2024/01/04 Update: Works for me, but I'll leave comment here in case it breaks again
+
   }
   const announcementBanner = (
     <a
@@ -20,7 +21,7 @@ export default function Layout({ children, title }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Applications for our 2021 team are now open. Click here to apply.
+      Applications for our 2024 team are now open. Click here to apply.
     </a>
   )
 
@@ -55,7 +56,7 @@ export default function Layout({ children, title }) {
         <link rel="icon" href={favicon} />
       </Helmet>
       <body className="bg-white flex flex-col min-h-screen">
-        {/*{announcementBanner}*/}
+        {announcementBanner}
         <div className="mx-6 mb-32 flex-grow md:mx-16 lg:mt-2 lg:mx-32 xl:mx-64 2xl:mx-96">
           <Header />
           <div className="my-8">{children}</div>
