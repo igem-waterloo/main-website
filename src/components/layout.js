@@ -16,7 +16,7 @@ export default function Layout({ children, title }) {
   const announcementBanner = (
     <a
       className="w-full bg-teal font-nunito text-white text-sm lg:text-base text-center p-2 z-10"
-      href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdWXO7-EF_vgOPB-gZBkeDeDGDNaWKND7aGkSDqLzbmNmFY4w/viewform?usp=send_form"
+      href="https://docs.google.com/forms/d/e/1FAIpQLScB09DmhImMSG6KAAqG0dCmhuWAH4USUiF6kA6Tb49E8BTGNQ/viewform"
       target="_blank"
       rel="noopener noreferrer"
     >

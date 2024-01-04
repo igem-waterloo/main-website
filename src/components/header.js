@@ -23,10 +23,10 @@ function Header() {
     If true, change the href tag to the link for the Google Form application
     If false, it will redirect the user to /joinus */
   }
-  const applicationsOpen = false
+  const applicationsOpen = true
   if (applicationsOpen) {
     var joinUsBtn = (
-      <a className={ctaCSS} href="" target="_blank" rel="noopener noreferrer">
+      <a className={ctaCSS} href="https://docs.google.com/forms/d/e/1FAIpQLScB09DmhImMSG6KAAqG0dCmhuWAH4USUiF6kA6Tb49E8BTGNQ/viewform" target="_blank" rel="noopener noreferrer">
         Join Us
       </a>
     )

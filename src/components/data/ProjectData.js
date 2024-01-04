@@ -130,5 +130,5 @@ const ProjectData = [
     wiki: "http://2014.igem.org/Team:Waterloo",
   },
 ]
-​
+
 export default ProjectData
