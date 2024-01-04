@@ -99,13 +99,13 @@ export default function Faq() {
           so you know how to improve next time. We highly encourage you to
           re-apply!
         </Accordion>
-        <Accordion title="How is COVID-19 impacting the team’s operation?">
+        {/* <Accordion title="How is COVID-19 impacting the team’s operation?">
           We are conducting our info session and interviews online. Our team
           will be meeting remotely and will not have access to our lab until the
           university deems it safe to regather on-campus. However, iGEM has made
           it possible to succeed (and win!) at the competition without lab work,
           and we did exactly that in 2020!
-        </Accordion>
+        </Accordion> */}
       </div>
     </Layout>
   )
