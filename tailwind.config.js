@@ -9,6 +9,7 @@ module.exports = {
         white: "#FCFCFE",
         yellow: "#ECB807",
         gray: "#F2F2F2",
+        pinene: "#f8f5e9",
         neurodetech: "#1a1e4d",
         remine: "#CFDBDD",
         rooting: "#98CC9A",
