@@ -1,8 +1,25 @@
 const ProjectData = [
   {
+    year: 2023,
+    title: "Guarden",
+    logo: require("../../images/neurodetech.png"),
+    imgSize: "w-48",
+    tagline: "",
+    homeDescription:
+      "We are developing a system for the detection and removal of microplastics in waterways using a combination of synthetic biology and materials science.",
+    abstract: 
+      "",
+    achievements: [
+      "Bronze Medal recipient"
+    ],
+    backgroundColour: "bg-guarden",
+    textColour: "text-blue",
+    wiki: "https://2023.igem.wiki/waterloo/",
+  },
+  {
     year: 2022,
     title: "Pinene Express",
-    logo: require("../../images/pinene-express.png"),  //need pinene express svg, ask iGEM 2022 designers?
+    logo: require("../../images/pinene-express.png"), 
     imgSize: "w-60",
     tagline: "The greener cannabis alternative",
     homeDescription:
