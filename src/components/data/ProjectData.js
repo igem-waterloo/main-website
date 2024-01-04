@@ -2,13 +2,13 @@ const ProjectData = [
   {
     year: 2023,
     title: "Guarden",
-    logo: require("../../images/neurodetech.png"),
+    logo: require("../../images/guarden.png"),
     imgSize: "w-48",
-    tagline: "",
+    tagline: "...",
     homeDescription:
-      "We are developing a system for the detection and removal of microplastics in waterways using a combination of synthetic biology and materials science.",
+      "...",
     abstract: 
-      "",
+      "...",
     achievements: [
       "Bronze Medal recipient"
     ],
