@@ -6,9 +6,9 @@ const ProjectData = [
     imgSize: "w-40",
     tagline: "An advanced defence against TSWV",
     homeDescription:
-      "We engineered a bmRNAi vaccine delivery mechanism to combat TSWV infections in plants with the aim of providing a sustainable solution for farmers, advancing biotechnology in agriculture, and ensuring food security by safeguarding crops.",
+      "We engineered a bmRNAi vaccine delivery mechanism to combat TSWV infections in plants as a means of providing a sustainable solution for farmers, advancing biotechnology in agriculture, and ensuring food security by safeguarding crops.",
     abstract: 
-      "Guarden address the challenge of Tomato Spotted Wilt Virus (TSWV) in tomatoes, a viral disease causing significant crop losses globally. Leveraging RNA interference (RNAi), we propose a novel approach involving engineered Pseudomonas syringae bacteria to deliver immune-inducing RNAi continuously. Our strategy capitalizes on the plant's RNAi pathway, ensuring precision, durability, and a natural defense mechanism against TSWV. Using a T7 RNA Polymerase expression system and Lambda Red knockout design, we developed a scalable solution with engineered E. coli as a proof of concept. The project introduces minicells as a unique delivery mechanism, providing a promising and environmentally friendly method to enhance plant immunity against TSWV.",
+      "Guarden treats Tomato Spotted Wilt Virus (TSWV) infections by leveraging genetically engineered Pseudomonas syringae bacteria to continuously deliver immune-inducing RNA interference (RNAi). Namely, our strategy capitalizes on the inherent RNAi pathways within plants to disrupt TSWV gene replication and expression, thus alleviating its effects. Using a T7 RNA Polymerase expression system and Lambda Red knockout design, we developed a scalable solution with modified E. coli as a proof of concept. The project also introduces minicells as a protective RNAi delivery mechanism, providing a promising and environmentally friendly method to enhance plant immunity against TSWV.",
     achievements: [
       "Bronze Medal recipient"
     ],
