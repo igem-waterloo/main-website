@@ -3,12 +3,12 @@ const ProjectData = [
     year: 2023,
     title: "Guarden",
     logo: require("../../images/guarden.png"),
-    imgSize: "w-48",
-    tagline: "...",
+    imgSize: "w-40",
+    tagline: "An advanced defence against TSWV",
     homeDescription:
-      "...",
+      "We engineered a bmRNAi vaccine delivery mechanism to combat TSWV infections in plants with the aim of providing a sustainable solution for farmers, advancing biotechnology in agriculture, and ensuring food security by safeguarding crops.",
     abstract: 
-      "...",
+      "Guarden address the challenge of Tomato Spotted Wilt Virus (TSWV) in tomatoes, a viral disease causing significant crop losses globally. Leveraging RNA interference (RNAi), we propose a novel approach involving engineered Pseudomonas syringae bacteria to deliver immune-inducing RNAi continuously. Our strategy capitalizes on the plant's RNAi pathway, ensuring precision, durability, and a natural defense mechanism against TSWV. Using a T7 RNA Polymerase expression system and Lambda Red knockout design, we developed a scalable solution with engineered E. coli as a proof of concept. The project introduces minicells as a unique delivery mechanism, providing a promising and environmentally friendly method to enhance plant immunity against TSWV.",
     achievements: [
       "Bronze Medal recipient"
     ],
@@ -37,10 +37,10 @@ const ProjectData = [
     year: 2021,
     title: "NeuroDetech",
     logo: require("../../images/neurodetech.png"),
-    imgSize: "w-48",
+    imgSize: "w-44",
     tagline: "Reducing the bias in ADHD diagnosis",
     homeDescription:
-      "We created a microfluidic assay chip that quantifies the concentration of certain biomarkers and gene markers with a statistically significant correlation to ADHD to aid in the diagnosis of ADHD and to reduce the margin of bias.",
+      "We created a microfluidic assay chip that quantifies the concentration of certain biomarkers and gene markers with a statistically significant correlation to ADHD to aid in its diagnosis and reduce margin of bias.",
     abstract:
       "NeuroDetech is a quantitative tool that aids in the diagnosis of ADHD and reduces the margin of bias by measuring the concentration of certain biomarkers with a statistically significant correlation to ADHD in urine. To do this, we designed a microfluidic assay chip as the physical device, with two types of analytes that we targeted to quantify: biomarkers with detection by a fusion protein, and gene markers with detection by an mRNA-binding CRISPR-Cas system. We also developed an optical detector and application used for signal interpretation and quantification. Due to the nature of neurological disorders, there are many more conditions that, like ADHD, suffer from inherent bias in the diagnosis process, and so we hope that NeuroDetech will provide a general synthetic biology solution to non-invasively and quantitatively assessing the risk of any neurological disorder.",
     achievements: [
