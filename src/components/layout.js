@@ -21,7 +21,7 @@ export default function Layout({ children, title }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Applications for our 2024 team are now open! Click here to apply.
+      Application deadlines have been extended to Friday Jan. 19th! Click here to apply.
     </a>
   )
 
