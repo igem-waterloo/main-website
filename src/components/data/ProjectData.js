@@ -1,5 +1,20 @@
 const ProjectData = [
   {
+    year: 2024,
+    title: "BovEco",
+    logo: require("../../images/moo.png"),
+    imgSize: "w-40",
+    tagline: "Reducing Methane, One Moo At A Time",
+    homeDescription:
+      "We genetically engineered microalgae, Chlorella Vulgaris, to deliver and stabilize a phage-derived lytic enzyme called PeiR which specifically targets and lyses the pseudomurein cell walls of methanogens.",
+    abstract: 
+       "Enteric methane emissions are one of the largest anthropogenic sources of this potent greenhouse gas (GHG). Our solution involves Chlorella vulgaris microalgae engineered to express phage-based lytic enzymes specifically targeting methanogen populations. Not only is microalgae a nutrient-rich potential feed additive, but due to similar genetic engineering processes, this will act as a proof of concept for genetically modified plants expressing these enzymes. Existing cellulose fermentation in the rumen degrades microalgae and plant cell walls, providing a release mechanism for the enzymes. We envision an engineered crop-based solution to be simple to implement, and cost-effective. Existing research shows that some phage-based enzymes are capable of lysing cells in free form. Furthermore, a reduction in certain methanogens can result in a sustained microbiome shift to favour other hydrogen sinks, including reductive acetogenesis.",
+    achievements: ["We had fun :)"],
+    backgroundColour: "bg-prions",
+    textColour: "text-white",
+    wiki: "https://2024.igem.wiki/waterloo/",
+  },
+  {
     year: 2023,
     title: "Guarden",
     logo: require("../../images/guarden.png"),
@@ -27,7 +42,7 @@ const ProjectData = [
     abstract:
       "Pinene Express uses bioengineered yeast to produce the main cannabinoids and select terpenes found in the cannabis plant. Pure compounds are extracted from yeast and shipped to various manufacturers where they can mix compounds as needed to mimic cannabis plant extract, eliminating the need for cultivation and post-processing altogether. To develop our proof of concept, our original vision was to construct 4 strains of yeast with quantified production of alpha-pinene, beta-caryophyllene, THC and CBD, respectively. Due to significant delays in our lab progress caused by procurement issues, we were limited to the successful cloning of all genes necessary for alpha-pinene, THC and CBD into yeast, as well as the successful cloning of beta-caryophyllene genes into E. coli.",
     achievements: [
-      "Gold Medal recipient", 
+      "Gold Medal recipient"
     ],
     backgroundColour: "bg-pinene",
     textColour: "text-blue",
