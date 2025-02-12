@@ -67,7 +67,7 @@ export default function Team() {
           Don't be late for some very important dates!
         </h3>
       </div>
-      <h2 className="mb-4">2024 Recruitment</h2>
+      <h2 className="mb-4">2025 Recruitment</h2>
       <div className="flex flex-col space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-8 md:items-start mb-16">
         <div className="span-col-1 flex flex-col gap-6">{recruitmentDates}</div>
         <img className="rounded-3xl" src={photo} alt="Team" />
