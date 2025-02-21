@@ -2,7 +2,7 @@ const ProjectData = [
   {
     year: 2024,
     title: "BovEco",
-    logo: require("../../images/moo.png"),
+    logo: require("../../images/BovEco.png"),
     imgSize: "w-40",
     tagline: "Reducing Methane, One Moo At A Time",
     homeDescription:
@@ -10,8 +10,8 @@ const ProjectData = [
     abstract: 
        "Enteric methane emissions are one of the largest anthropogenic sources of this potent greenhouse gas (GHG). Our solution involves Chlorella vulgaris microalgae engineered to express phage-based lytic enzymes specifically targeting methanogen populations. Not only is microalgae a nutrient-rich potential feed additive, but due to similar genetic engineering processes, this will act as a proof of concept for genetically modified plants expressing these enzymes. Existing cellulose fermentation in the rumen degrades microalgae and plant cell walls, providing a release mechanism for the enzymes. We envision an engineered crop-based solution to be simple to implement, and cost-effective. Existing research shows that some phage-based enzymes are capable of lysing cells in free form. Furthermore, a reduction in certain methanogens can result in a sustained microbiome shift to favour other hydrogen sinks, including reductive acetogenesis.",
     achievements: ["We had fun :)"],
-    backgroundColour: "bg-prions",
-    textColour: "text-white",
+    backgroundColour: "bg-pinene",
+    textColour: "text-black",
     wiki: "https://2024.igem.wiki/waterloo/",
   },
   {
